@@ -1,13 +1,13 @@
-const serviceModel=require('../Model/ServiceRecordModel')
+const serviceModel = require('../Model/ServiceRecordModel')
 
-const createService=async function(req,res){
-    try{
-let service=req.body;
-await serviceModel.create(service);
-return res.status(200).send({msg:'service is created'});
-    } catch (error){
+const createService = async function (req, res) {
+    try {
+        let service = req.body;
+        await serviceModel.create(service);
+        return res.status(200).send({ msg: 'service is created' });
+    } catch (error) {
         res.status(500).send(error.message)
-    
+
     }
 
 
@@ -19,9 +19,9 @@ return res.status(200).send({msg:'service is created'});
 
 
 
-    
+
 }
-module.exports.createService=createService;
+module.exports.createService = createService;
 
 
 
