@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const route = require('./router');
 const mongoose = require('mongoose');
 const app = express();
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.connect("mongodb+srv://sankalesh8668:790602030305@cluster0.pymsd.mongodb.net/WinGroup", {

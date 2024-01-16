@@ -1,6 +1,5 @@
 const Order = require('../Model/OrdersModel')
 const service = require('../Model/ServiceRecordModel')
-
 const createOrder = async function (req, res) {
     try {
         const newOrderData = req.body;

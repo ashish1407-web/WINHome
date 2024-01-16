@@ -8,5 +8,4 @@ router.post("/createService", serviceController.createService)
 router.post("/createOrder/:Id", orderController.createOrder)
 router.get("/getOrder", orderController.getOrder)
 router.put("/updateOrder", orderController.updateOrder)
-
 module.exports = router;

@@ -1,5 +1,4 @@
 const serviceModel = require('../Model/ServiceRecordModel')
-
 const createService = async function (req, res) {
     try {
         let service = req.body;
